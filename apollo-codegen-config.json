@@ -1,0 +1,31 @@
+{
+  "schemaNamespace" : "Demo",
+  "input" : {
+    "operationSearchPaths" : [
+      "./Queries/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "./schema.json"
+    ]
+  },
+  "output" : {
+      "testMocks": {
+          "absolute": {
+              "path": "./Tests/GraphQLMocks"
+          }
+      },
+    "schemaTypes" : {
+      "path" : "./Sources/GraphQL",
+      "moduleType" : {
+        "embeddedInTarget" : {
+          "name" : "Demo",
+          "accessModifier": "internal"
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

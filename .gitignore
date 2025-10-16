@@ -1,0 +1,5 @@
+build/
+.build/
+xcuserdata
+.DS_Store
+apollo-ios-cli

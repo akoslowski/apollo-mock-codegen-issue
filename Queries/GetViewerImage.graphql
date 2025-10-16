@@ -1,0 +1,5 @@
+query GetViewerImage {
+  Viewer {
+    imageURL
+  }
+}
