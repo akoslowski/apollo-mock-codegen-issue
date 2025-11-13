@@ -16,7 +16,7 @@ public final class Viewer: MockObject {
 
 public extension Mock where O == Viewer {
   convenience init(
-    imageURL: Demo.URL = try! .init(_jsonValue: "")
+    imageURL: Demo.URL = .defaultMockValue
   ) {
     self.init()
     _setScalar(imageURL, for: \.imageURL)
